@@ -27,6 +27,11 @@ Instale as dependências
 ```bash
   npm install
 ```
+Execute o build
+
+```bash
+  npm run build
+```
 
 Execute o preview
 
