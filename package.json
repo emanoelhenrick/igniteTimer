@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx",
-    "dev": "vite",
+    "dev": "vite --port 8080",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 8080"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",

@@ -7,7 +7,6 @@ import {
   useState,
 } from 'react'
 import {
-  ActionTypes,
   addNewCycleAction,
   interruptCurrentCycleAction,
   markCurrentCycleAsFinishedAction,
@@ -52,6 +51,11 @@ export function CyclesContextProvider({
 
       if (storedStateAsJSON) {
         return JSON.parse(storedStateAsJSON)
+      } else {
+        return {
+          cycles: [],
+          activeCycleId: null,
+        }
       }
     },
   )
